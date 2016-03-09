@@ -5,6 +5,7 @@
 		<link rel="canonical" href="<?php echo esc_url( $this->get_canonical_url() ); ?>">
 		<meta property="op:markup_version" content="v1.0">
 		<meta property="fb:article_style" content="<?php echo esc_attr( $this->get_article_style() ); ?>">
+		<meta property="fb:use_automatic_ad_placement" content="<?php echo ( $this->get_use_automatic_ad_placement() ? 'true' : 'false' ); ?>">
 
 		<?php
 		/**

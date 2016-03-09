@@ -659,6 +659,28 @@ class Instant_Articles_Post {
 		return $article_style;
 	}
 
+	/**
+	 * Shall we use automatic ad placement or not?
+	 *
+	 * @since 0.2
+	 * @return bool Whether we shall use automatic ad placement or not. Defaults to false
+	 */
+	function get_use_automatic_ad_placement() {
+
+		$use_automatic_ad_placement = false;
+
+		/**
+	     * Filter the value whether
+	     *
+	     * @since 0.2
+	     * @param string   $use_automatic_ad_placement   Current value
+	     * @param bool     $instant_article_post         The instant article post
+	     */
+		$use_automatic_ad_placement = apply_filters( 'instant_articles_use_automatic_ad_placement', $use_automatic_ad_placement, $this );
+
+		return (bool) $use_automatic_ad_placement;
+	}
+
 }
 
 
