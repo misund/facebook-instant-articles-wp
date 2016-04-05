@@ -27,7 +27,7 @@ abstract class Instant_Articles_DOM_Transform_Filter {
 	 * Run the transformation
 	 *
 	 * @since 0.1
-	 * @return DOMDocument  THe transformed DOM document.
+	 * @return DOMDocument  The transformed DOM document.
 	 */
 	abstract public function run();
 
